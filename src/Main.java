@@ -1,9 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(twoSum(List.of(10, 90, 13, 9,1), 23));
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(twoSum(List.of(10, 90, 13, 9,1), scanner.nextInt()));
     }
     public static List<Integer> twoSum(List<Integer> num,int target){
         for (int i = 0; i < num.size()-1; i++) {
@@ -13,6 +15,6 @@ public class Main {
                 }
             }
         }
-        return num;
+        return null;
     }
 }
